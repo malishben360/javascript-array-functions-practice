@@ -34,22 +34,22 @@ const characters = [
 let names = characters.map((character) => {
 	return character.name
 })
-console.log(names)
+//console.log(names)
 //2. Get array of all heights
 let heights = characters.map((character) => {
 	return character.height
 })
-console.log(heights)
+//console.log(heights)
 //3. Get array of objects with just name and height properties
 let nameHeights = characters.map((character) => {
 	return { name: character.name, height: character.height }
 })
-console.log(nameHeights)
+//console.log(nameHeights)
 //4. Get array of all first names
 let firstNames = characters.map((character) => {
 	return character.name.split(' ')[0]
 })
-console.log(firstNames)
+//console.log(firstNames)
 
 //***REDUCE***
 //1. Get total mass of all characters
