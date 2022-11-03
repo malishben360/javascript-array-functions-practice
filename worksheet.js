@@ -111,6 +111,14 @@ let allMale = characters.every((character) => character.gender === 'male')
 
 //***SOME***
 //1. Is there at least one male character?
+let containsMale = characters.some((character) => character.gender === 'male')
 //2. Is there at least one character with blue eyes?
+let containsBlueEye = characters.some(
+	(character) => character.eye_color === 'blue'
+)
 //3. Is there at least one character taller than 210?
+let containsHeight210 = characters.some((character) => character.height > 210)
 //4. Is there at least one character that has mass less than 50?
+let containsMassLess50 = characters.some((character) => character.mass < 50)
+
+/** TRY THIS TASKS YOURSELF */
