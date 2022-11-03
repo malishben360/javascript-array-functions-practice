@@ -101,9 +101,13 @@ let sortByGender = characters.sort((a, b) => a.gender.localeCompare(b.gender))
 
 //***EVERY***
 //1. Does every character have blue eyes?
+let allBlueEye = characters.every((character) => character.eye_color === 'blue')
 //2. Does every character have mass more than 40?
+let allMassGreater40 = characters.every((character) => character.mass > 40)
 //3. Is every character shorter than 200?
+let allShorter200 = characters.every((character) => character.height < 200)
 //4. Is every character male?
+let allMale = characters.every((character) => character.gender === 'male')
 
 //***SOME***
 //1. Is there at least one male character?
