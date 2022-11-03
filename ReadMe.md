@@ -1,6 +1,6 @@
 # JavaScript Array Functions
 
-learning how to use JavaScript array functions like map, reduce, filter.
+learning how to use JavaScript array functions like map, reduce, filter etc.
 
 ## Sample Data
 
