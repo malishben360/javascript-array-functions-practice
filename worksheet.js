@@ -77,9 +77,17 @@ let totalCharacters = characters.reduce((prev, curr) => {
 
 //***FILTER***
 //1. Get characters with mass greater than 100
+let massGreater100 = characters.filter((character) => character.mass > 100)
 //2. Get characters with height less than 200
+let heightLesser200 = characters.filter((character) => character.height < 200)
 //3. Get all male characters
+let maleCharacters = characters.filter(
+	(character) => character.gender === 'male'
+)
 //4. Get all female characters
+let femaleCharacters = characters.filter(
+	(character) => character.gender === 'female'
+)
 
 //***SORT***
 //1. Sort by mass
