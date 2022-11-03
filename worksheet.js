@@ -53,9 +53,27 @@ let firstNames = characters.map((character) => {
 
 //***REDUCE***
 //1. Get total mass of all characters
+let totalMass = characters.reduce((prev, curr) => {
+	prev += curr.mass
+	return prev
+}, 0)
 //2. Get total height of all characters
+let totalHeight = characters.reduce((prev, curr) => {
+	prev += curr.height
+	return prev
+}, 0)
 //3. Get total number of characters by eye color
+charByEyeColor = characters.reduce((prev, curr) => {
+	let color = curr.eye_color
+	if (!prev[color]) prev[color] = 1
+	else prev[color]++
+	return prev
+}, {})
 //4. Get total number of characters in all the character names
+let totalCharacters = characters.reduce((prev, curr) => {
+	prev += curr.name.length
+	return prev
+}, 0)
 
 //***FILTER***
 //1. Get characters with mass greater than 100
