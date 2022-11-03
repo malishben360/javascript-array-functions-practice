@@ -91,9 +91,13 @@ let femaleCharacters = characters.filter(
 
 //***SORT***
 //1. Sort by mass
+let sortByMass = characters.sort((a, b) => a.mass - b.mass)
 //2. Sort by height
+let sortByHeight = characters.sort((a, b) => a.height - b.height)
 //3. Sort by name
+let sortByName = characters.sort((a, b) => a.name.localeCompare(b.name))
 //4. Sort by gender
+let sortByGender = characters.sort((a, b) => a.gender.localeCompare(b.gender))
 
 //***EVERY***
 //1. Does every character have blue eyes?
